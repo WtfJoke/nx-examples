@@ -85,7 +85,12 @@
         "jestConfig": "apps/cart/jest.config.js",
         "passWithNoTests": true
       },
-      "outputs": ["coverage/apps/cart"]
+      "outputs": ["coverage/apps/cart"],
+      "configurations": {
+        "watch": {
+          "watch": true
+        }
+      }
     },
     "deploy": {
       "executor": "@nrwl/workspace:run-commands",
